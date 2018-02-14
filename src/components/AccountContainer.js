@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import TransactionsList from './TransactionsList'
 import Search from './Search'
-import {transactions} from '../transactionsData'
+//import {transactions} from '../transactionsData'
 
 class AccountContainer extends Component {
   // get a default state working with the data imported from TransactionsData
@@ -31,7 +31,7 @@ class AccountContainer extends Component {
 
     return (
       <div>
-        <Search handleChange={this.handleChange}/>
+        <Search handleChange={this.handleChange} searchTerm={this.state.searchTerm}/>
         <TransactionsList transactions={this.state.transactions} searchTerm={this.state.searchTerm}/>
       </div>
     )

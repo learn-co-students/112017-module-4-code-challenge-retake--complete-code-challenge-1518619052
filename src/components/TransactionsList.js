@@ -40,7 +40,7 @@ const TransactionsList = (props) => {
           </th>
         </tr>
 
-        {allTransactions}
+          {allTransactions}
 
       </tbody>
     </table>
